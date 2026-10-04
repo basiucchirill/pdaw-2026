@@ -1,4 +1,123 @@
-.body{
-    background-color: #6b1b1b;
-    color: #ffffff;
+/* ===== Цвета и размеры сайта ===== */
+:root {
+    --color-text: #222222;       /* основной текст */
+    --color-bg: #ffffff;         /* фон страницы */
+    --color-light: #f2f5f9;      /* светлый фон блоков */
+    --color-border: #d0d7e0;     /* линии и рамки */
+    --color-accent: #2b6cb0;     /* акцент: кнопки, ссылки */
+    --space: 8px;                /* базовый отступ */
+}
+
+/* ===== Общие стили ===== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-text);
+    background: var(--color-bg);
+}
+
+a {
+    color: var(--color-accent);
+}
+
+/* ===== Шапка ===== */
+.header-top {
+    display: flex;
+    justify-content: center;
+    gap: calc(var(--space) * 3);
+    padding: var(--space);
+    background: var(--color-light);
+    font-size: 14px;
+}
+
+.header-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: calc(var(--space) * 2);
+    padding: calc(var(--space) * 2) calc(var(--space) * 3);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space);
+}
+
+.menu a {
+    padding: var(--space) calc(var(--space) * 2);
+    text-decoration: none;
+    color: var(--color-text);
+    border-radius: 4px;
+}
+
+.menu a:hover,
+.menu a.active {
+    background: var(--color-accent);
+    color: var(--color-bg);
+}
+
+/* ===== Главный блок ===== */
+.hero {
+    padding: calc(var(--space) * 8) calc(var(--space) * 3);
+    background: var(--color-light);
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: calc(var(--space) * 2);
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto calc(var(--space) * 3);
+}
+
+.button {
+    display: inline-block;
+    padding: calc(var(--space) * 1.5) calc(var(--space) * 4);
+    background: var(--color-accent);
+    color: var(--color-bg);
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.button:hover {
+    opacity: 0.85;
+}
+
+/* ===== Подвал ===== */
+.footer {
+    padding: calc(var(--space) * 3);
+    border-top: 1px solid var(--color-border);
+    background: var(--color-light);
+    text-align: center;
+    font-size: 14px;
+}
+
+/* ===== Телефоны и планшеты ===== */
+@media (max-width: 768px) {
+    .header-main {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
 }
