@@ -1,10 +1,31 @@
 :root {
+<<<<<<< HEAD
     --color-text: #222222;
     --color-bg: #ffffff;
     --color-light: #f2f5f9;
     --color-border: #d0d7e0;
     --color-accent: #2b6cb0;
     --space: 8px;
+=======
+    --c-ink: #1f2937;
+    --c-accent: #2b6cb0;
+    --c-bg: #f5f7fa;
+    --c-line: #cbd2d9;
+    --c-alert: #c53030;
+
+    --fs-h1: 40px;
+    --fs-h2: 28px;
+    --fs-h3: 20px;
+    --fs-body: 16px;
+    --fs-small: 14px;
+
+    --s-1: 8px;
+    --s-2: 16px;
+    --s-3: 24px;
+    --s-4: 32px;
+    --s-6: 48px;
+    --s-8: 64px;
+>>>>>>> a4d5cac (Build home page: header, hero, categories, popular products, footer; add palette, type and spacing scale)
 }
 
 * {
@@ -15,37 +36,77 @@
 
 body {
     font-family: Arial, sans-serif;
-    font-size: 16px;
+    font-size: var(--fs-body);
     line-height: 1.5;
-    color: var(--color-text);
-    background: var(--color-bg);
+    color: var(--c-ink);
+    background: white;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 a {
-    color: var(--color-accent);
+    color: var(--c-accent);
 }
 
+<<<<<<< HEAD
 .header-top {
+=======
+a:focus {
+    outline: 3px dashed var(--c-ink);
+    outline-offset: 2px;
+}
+
+h1,
+h2,
+h3 {
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: var(--fs-h2);
+}
+
+h3 {
+    font-size: var(--fs-h3);
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--s-2);
+}
+
+.topbar {
+    background: var(--c-bg);
+    border-bottom: 1px solid var(--c-line);
+    font-size: var(--fs-small);
+}
+
+.topbar .container {
+>>>>>>> a4d5cac (Build home page: header, hero, categories, popular products, footer; add palette, type and spacing scale)
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: calc(var(--space) * 3);
-    padding: var(--space);
-    background: var(--color-light);
-    font-size: 14px;
+    gap: 0 var(--s-3);
+    padding-top: var(--s-1);
+    padding-bottom: var(--s-1);
 }
 
 .header-main {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    flex-wrap: wrap;
-    gap: calc(var(--space) * 2);
-    padding: calc(var(--space) * 2) calc(var(--space) * 3);
-    border-bottom: 1px solid var(--color-border);
+    gap: var(--s-2);
+    padding-top: var(--s-2);
+    padding-bottom: var(--s-2);
 }
 
 .logo {
-    font-size: 28px;
+    font-size: var(--fs-h2);
     font-weight: bold;
     text-decoration: none;
 }
@@ -53,22 +114,24 @@ a {
 .menu {
     display: flex;
     flex-wrap: wrap;
-    gap: var(--space);
+    justify-content: center;
+    gap: var(--s-1);
 }
 
 .menu a {
-    padding: var(--space) calc(var(--space) * 2);
+    padding: var(--s-1) var(--s-2);
+    color: var(--c-ink);
     text-decoration: none;
-    color: var(--color-text);
     border-radius: 4px;
 }
 
 .menu a:hover,
 .menu a.active {
-    background: var(--color-accent);
-    color: var(--color-bg);
+    background: var(--c-accent);
+    color: white;
 }
 
+<<<<<<< HEAD
 .hero {
     padding: calc(var(--space) * 8) calc(var(--space) * 3);
     background: var(--color-light);
@@ -83,35 +146,265 @@ a {
 .hero p {
     max-width: 600px;
     margin: 0 auto calc(var(--space) * 3);
+=======
+.menu a:active {
+    background: var(--c-ink);
+>>>>>>> a4d5cac (Build home page: header, hero, categories, popular products, footer; add palette, type and spacing scale)
 }
 
 .button {
     display: inline-block;
-    padding: calc(var(--space) * 1.5) calc(var(--space) * 4);
-    background: var(--color-accent);
-    color: var(--color-bg);
-    text-decoration: none;
+    padding: var(--s-2) var(--s-4);
+    background: var(--c-accent);
+    border: 2px solid var(--c-accent);
     border-radius: 4px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
 }
 
 .button:hover {
-    opacity: 0.85;
+    background: var(--c-ink);
+    border-color: var(--c-ink);
 }
 
+<<<<<<< HEAD
 .footer {
     padding: calc(var(--space) * 3);
     border-top: 1px solid var(--color-border);
     background: var(--color-light);
-    text-align: center;
-    font-size: 14px;
+=======
+.button:active {
+    transform: translateY(2px);
 }
 
+.button-small {
+    padding: var(--s-1) var(--s-2);
+    background: white;
+    color: var(--c-accent);
+    font-size: var(--fs-small);
+}
+
+.button-small:hover {
+    background: var(--c-accent);
+    border-color: var(--c-accent);
+    color: white;
+}
+
+.hero {
+    padding: var(--s-4) 0;
+    background: var(--c-bg);
+}
+
+.hero-inner {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s-4);
+}
+
+.hero h1 {
+    margin-bottom: var(--s-2);
+    font-size: var(--fs-h2);
+}
+
+.hero p {
+    margin-bottom: var(--s-3);
+}
+
+.hero-img {
+    width: 100%;
+}
+
+.section {
+    padding: var(--s-6) 0;
+}
+
+.section-light {
+    background: var(--c-bg);
+}
+
+.section h2 {
+    margin-bottom: var(--s-3);
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--s-2);
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--s-1);
+    padding: var(--s-3) var(--s-1);
+    background: var(--c-bg);
+    border: 1px solid var(--c-line);
+    border-radius: 8px;
+    color: var(--c-ink);
+>>>>>>> a4d5cac (Build home page: header, hero, categories, popular products, footer; add palette, type and spacing scale)
+    text-align: center;
+    text-decoration: none;
+}
+
+<<<<<<< HEAD
 @media (max-width: 768px) {
+=======
+.category img {
+    width: 64px;
+    height: 64px;
+}
+
+.category:hover {
+    border-color: var(--c-accent);
+    color: var(--c-accent);
+}
+
+.category:active {
+    background: white;
+}
+
+.category:last-child {
+    grid-column: 1 / -1;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s-3);
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background: white;
+    border: 1px solid var(--c-line);
+    border-radius: 8px;
+}
+
+.card-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    padding: var(--s-2);
+    object-fit: contain;
+    border-bottom: 1px solid var(--c-line);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: var(--s-1);
+    padding: var(--s-2);
+}
+
+.card-info {
+    font-size: var(--fs-small);
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding-top: var(--s-1);
+}
+
+.card-price {
+    font-size: var(--fs-h3);
+    font-weight: bold;
+    color: var(--c-accent);
+}
+
+.footer {
+    padding: var(--s-6) 0 var(--s-3);
+    background: var(--c-bg);
+    border-top: 1px solid var(--c-line);
+    font-size: var(--fs-small);
+}
+
+.footer-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--s-3);
+}
+
+.footer h3 {
+    margin-bottom: var(--s-1);
+    font-size: var(--fs-body);
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer a {
+    color: var(--c-ink);
+}
+
+.copyright {
+    margin-top: var(--s-3);
+    padding-top: var(--s-2);
+    border-top: 1px solid var(--c-line);
+    text-align: center;
+}
+
+@media (min-width: 480px) {
+    .container {
+        padding: 0 var(--s-3);
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 768px) {
+>>>>>>> a4d5cac (Build home page: header, hero, categories, popular products, footer; add palette, type and spacing scale)
     .header-main {
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        justify-content: flex-end;
+    }
+
+    .hero {
+        padding: var(--s-6) 0;
     }
 
     .hero h1 {
-        font-size: 28px;
+        font-size: var(--fs-h1);
+    }
+
+    .categories {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .category:last-child {
+        grid-column: auto;
+    }
+
+    .footer-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-inner {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-text,
+    .hero-img {
+        width: 50%;
+    }
+
+    .products {
+        grid-template-columns: repeat(4, 1fr);
     }
 }

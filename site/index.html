@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ДомТех — магазин бытовой техники: холодильники, стиральные машины, плиты, пылесосы и мелкая техника.">
     <title>ДомТех — бытовая техника для вашего дома</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="header">
-        <div class="header-top">
-            <span>Пн–Пт 10:00–19:00</span>
-            <span>Тел.: +373 XX XXX XXX</span>
+        <div class="topbar">
+            <div class="container">
+                <span>Пн–Пт 10:00–19:00</span>
+                <span>Тел.: +373 XX XXX XXX</span>
+                <span>info@domtech.md</span>
+            </div>
         </div>
-        <div class="header-main">
+        <div class="container header-main">
             <a href="index.html" class="logo">ДомТех</a>
             <nav class="menu">
                 <a href="index.html" class="active">Главная</a>
@@ -26,19 +30,132 @@
     </header>
 
     <main>
-        
+
         <section class="hero">
-            <h1>Бытовая техника для вашего дома</h1>
-            <p>Холодильники, стиральные машины, плиты, пылесосы и мелкая техника по понятным ценам.</p>
-            <a href="catalog.html" class="button">Смотреть каталог</a>
+            <div class="container hero-inner">
+                <div class="hero-text">
+                    <h1>Бытовая техника для вашего дома</h1>
+                    <p>Холодильники, стиральные машины, плиты, пылесосы и мелкая техника. Понятные цены и доставка по Молдове.</p>
+                    <a href="catalog.html" class="button">Смотреть каталог</a>
+                </div>
+                <img class="hero-img" src="img/hero.svg" alt="Холодильник, стиральная машина и плита">
+            </div>
         </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>Категории</h2>
+                <div class="categories">
+                    <a href="catalog.html#fridges" class="category">
+                        <img src="img/fridge.svg" alt="" loading="lazy">
+                        <span>Холодильники</span>
+                    </a>
+                    <a href="catalog.html#washers" class="category">
+                        <img src="img/washer.svg" alt="" loading="lazy">
+                        <span>Стиральные машины</span>
+                    </a>
+                    <a href="catalog.html#cookers" class="category">
+                        <img src="img/stove.svg" alt="" loading="lazy">
+                        <span>Плиты и духовки</span>
+                    </a>
+                    <a href="catalog.html#vacuums" class="category">
+                        <img src="img/vacuum.svg" alt="" loading="lazy">
+                        <span>Пылесосы</span>
+                    </a>
+                    <a href="catalog.html#small" class="category">
+                        <img src="img/small.svg" alt="" loading="lazy">
+                        <span>Мелкая техника</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-light">
+            <div class="container">
+                <h2>Популярные товары</h2>
+                <div class="products">
+
+                    <article class="card">
+                        <img class="card-img" src="img/fridge.svg" alt="Холодильник Samsung RB33J3200SA" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Холодильник Samsung RB33J3200SA</h3>
+                            <p class="card-info">Двухкамерный · No Frost · 328 л</p>
+                            <div class="card-bottom">
+                                <span class="card-price">11&nbsp;489 лей</span>
+                                <a href="catalog.html#fridges" class="button button-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img class="card-img" src="img/washer.svg" alt="Стиральная машина Indesit BWSA 61051" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Стиральная машина Indesit BWSA 61051</h3>
+                            <p class="card-info">Фронтальная · 6 кг · 1000 об/мин</p>
+                            <div class="card-bottom">
+                                <span class="card-price">4&nbsp;999 лей</span>
+                                <a href="catalog.html#washers" class="button button-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img class="card-img" src="img/stove.svg" alt="Плита GEFEST 6100-02" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Плита Gorenje GKS6C71WA</h3>
+                            <p class="card-info">Газовая · 4 конфорки · духовка 71 л</p>
+                            <div class="card-bottom">
+                                <span class="card-price">9&nbsp;499 лей</span>
+                                <a href="catalog.html#cookers" class="button button-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img class="card-img" src="img/vacuum.svg" alt="Пылесос Philips PowerPro Compact FC9332" loading="lazy">
+                        <div class="card-body">
+                            <h3 class="card-title">Пылесос Philips PowerPro Compact FC9332</h3>
+                            <p class="card-info">Безмешковый · контейнер 1,5 л</p>
+                            <div class="card-bottom">
+                                <span class="card-price">2&nbsp;799 лей</span>
+                                <a href="catalog.html#vacuums" class="button button-small">Подробнее</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
     </main>
 
-   
     <footer class="footer">
-        <p>ДомТех — учебный проект. Все данные условные.</p>
-        <p>Адрес: г. Бельцы, ул. Несуществующая, 1 · Тел.: +373 XX XXX XXX · info@domtech.md</p>
-        <p>Часы работы: Пн–Пт 10:00–19:00</p>
+        <div class="container">
+            <div class="footer-columns">
+                <div>
+                    <h3>Меню</h3>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="catalog.html">Каталог</a></li>
+                        <li><a href="delivery.html">Доставка и оплата</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Контакты</h3>
+                    <p>г. Бельцы, ул. Несуществующая, 1</p>
+                    <p>Тел.: +373 XX XXX XXX</p>
+                    <p>info@domtech.md</p>
+                </div>
+                <div>
+                    <h3>Часы работы</h3>
+                    <p>Пн–Пт: 10:00–19:00</p>
+                    <p>Сб–Вс: выходной</p>
+                </div>
+            </div>
+            <p class="copyright">ДомТех — учебный проект. Магазин вымышленный, цены ориентировочные.</p>
+        </div>
     </footer>
 
 </body>
