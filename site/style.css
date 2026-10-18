@@ -1,12 +1,4 @@
 :root {
-<<<<<<< HEAD
-    --color-text: #222222;
-    --color-bg: #ffffff;
-    --color-light: #f2f5f9;
-    --color-border: #d0d7e0;
-    --color-accent: #2b6cb0;
-    --space: 8px;
-=======
     --c-ink: #1f2937;
     --c-accent: #2b6cb0;
     --c-bg: #f5f7fa;
@@ -25,7 +17,6 @@
     --s-4: 32px;
     --s-6: 48px;
     --s-8: 64px;
->>>>>>> a4d5cac (Build home page: header, hero, categories, popular products, footer; add palette, type and spacing scale)
 }
 
 * {
@@ -36,6 +27,7 @@
 
 body {
     font-family: Arial, sans-serif;
+    font-size: var(--fs-body);
     font-size: var(--fs-body);
     line-height: 1.5;
     color: var(--c-ink);
@@ -51,9 +43,6 @@ a {
     color: var(--c-accent);
 }
 
-<<<<<<< HEAD
-.header-top {
-=======
 a:focus {
     outline: 3px dashed var(--c-ink);
     outline-offset: 2px;
@@ -87,10 +76,13 @@ h3 {
 }
 
 .topbar .container {
->>>>>>> a4d5cac (Build home page: header, hero, categories, popular products, footer; add palette, type and spacing scale)
     display: flex;
     flex-wrap: wrap;
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 0 var(--s-3);
+    padding-top: var(--s-1);
+    padding-bottom: var(--s-1);
     gap: 0 var(--s-3);
     padding-top: var(--s-1);
     padding-bottom: var(--s-1);
@@ -99,13 +91,18 @@ h3 {
 .header-main {
     display: flex;
     flex-direction: column;
+    flex-direction: column;
     align-items: center;
+    gap: var(--s-2);
+    padding-top: var(--s-2);
+    padding-bottom: var(--s-2);
     gap: var(--s-2);
     padding-top: var(--s-2);
     padding-bottom: var(--s-2);
 }
 
 .logo {
+    font-size: var(--fs-h2);
     font-size: var(--fs-h2);
     font-weight: bold;
     text-decoration: none;
@@ -116,9 +113,13 @@ h3 {
     flex-wrap: wrap;
     justify-content: center;
     gap: var(--s-1);
+    justify-content: center;
+    gap: var(--s-1);
 }
 
 .menu a {
+    padding: var(--s-1) var(--s-2);
+    color: var(--c-ink);
     padding: var(--s-1) var(--s-2);
     color: var(--c-ink);
     text-decoration: none;
@@ -131,25 +132,8 @@ h3 {
     color: white;
 }
 
-<<<<<<< HEAD
-.hero {
-    padding: calc(var(--space) * 8) calc(var(--space) * 3);
-    background: var(--color-light);
-    text-align: center;
-}
-
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: calc(var(--space) * 2);
-}
-
-.hero p {
-    max-width: 600px;
-    margin: 0 auto calc(var(--space) * 3);
-=======
 .menu a:active {
     background: var(--c-ink);
->>>>>>> a4d5cac (Build home page: header, hero, categories, popular products, footer; add palette, type and spacing scale)
 }
 
 .button {
@@ -168,12 +152,6 @@ h3 {
     border-color: var(--c-ink);
 }
 
-<<<<<<< HEAD
-.footer {
-    padding: calc(var(--space) * 3);
-    border-top: 1px solid var(--color-border);
-    background: var(--color-light);
-=======
 .button:active {
     transform: translateY(2px);
 }
@@ -243,14 +221,10 @@ h3 {
     border: 1px solid var(--c-line);
     border-radius: 8px;
     color: var(--c-ink);
->>>>>>> a4d5cac (Build home page: header, hero, categories, popular products, footer; add palette, type and spacing scale)
     text-align: center;
     text-decoration: none;
 }
 
-<<<<<<< HEAD
-@media (max-width: 768px) {
-=======
 .category img {
     width: 64px;
     height: 64px;
@@ -318,6 +292,7 @@ h3 {
     color: var(--c-accent);
 }
 
+<<<<<<< HEAD
 .footer {
     padding: var(--s-6) 0 var(--s-3);
     background: var(--c-bg);
@@ -362,8 +337,17 @@ h3 {
 }
 
 @media (min-width: 768px) {
->>>>>>> a4d5cac (Build home page: header, hero, categories, popular products, footer; add palette, type and spacing scale)
     .header-main {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        justify-content: flex-end;
+    }
+
+    .hero {
+        padding: var(--s-6) 0;
         flex-direction: row;
         justify-content: space-between;
     }
@@ -397,7 +381,37 @@ h3 {
     .hero-inner {
         flex-direction: row;
         align-items: center;
+        font-size: var(--fs-h1);
     }
+
+    .categories {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .category:last-child {
+        grid-column: auto;
+    }
+
+    .footer-columns {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-inner {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .hero-text,
+    .hero-img {
+        width: 50%;
+    }
+
+    .products {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
 
     .hero-text,
     .hero-img {
