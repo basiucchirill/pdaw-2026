@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" width="480" height="360">
+    <rect x="1" y="1" width="478" height="358" rx="16" fill="#ffffff" stroke="#cbd2d9" stroke-width="2"/>
+    <line x1="24" y1="300" x2="456" y2="300" stroke="#cbd2d9" stroke-width="4"/>
+    <g transform="translate(30 160) scale(1.25)">
+        <rect x="32" y="8" width="56" height="104" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="4"/>
+        <line x1="32" y1="44" x2="88" y2="44" stroke="#1f2937" stroke-width="4"/>
+        <rect x="76" y="18" width="5" height="18" rx="2" fill="#2b6cb0"/>
+        <rect x="76" y="54" width="5" height="30" rx="2" fill="#2b6cb0"/>
+    </g>
+    <g transform="translate(165 160) scale(1.25)">
+        <rect x="16" y="8" width="88" height="104" rx="8" fill="#ffffff" stroke="#1f2937" stroke-width="4"/>
+        <line x1="16" y1="32" x2="104" y2="32" stroke="#1f2937" stroke-width="4"/>
+        <circle cx="32" cy="20" r="5" fill="#2b6cb0"/>
+        <rect x="60" y="16" width="32" height="8" rx="3" fill="#cbd2d9"/>
+        <circle cx="60" cy="72" r="28" fill="#f5f7fa" stroke="#1f2937" stroke-width="4"/>
+        <circle cx="60" cy="72" r="18" fill="#cbd2d9" stroke="#2b6cb0" stroke-width="4"/>
+    </g>
+    <g transform="translate(300 160) scale(1.25)">
+        <rect x="16" y="10" width="88" height="102" rx="6" fill="#ffffff" stroke="#1f2937" stroke-width="4"/>
+        <line x1="16" y1="42" x2="104" y2="42" stroke="#1f2937" stroke-width="4"/>
+        <circle cx="40" cy="26" r="8" fill="none" stroke="#2b6cb0" stroke-width="3"/>
+        <circle cx="80" cy="26" r="8" fill="none" stroke="#2b6cb0" stroke-width="3"/>
+        <rect x="28" y="54" width="64" height="46" rx="4" fill="#f5f7fa" stroke="#1f2937" stroke-width="3"/>
+        <line x1="38" y1="63" x2="82" y2="63" stroke="#2b6cb0" stroke-width="4" stroke-linecap="round"/>
+    </g>
+</svg>
